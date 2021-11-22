@@ -1,0 +1,15 @@
+#
+
+echo "" > result_fas_agg.txt
+for algo in BM_FAS
+do
+	echo "$algo" >> result_fas_agg.txt
+	for k in 2048
+	do 
+		echo $k >> result_fas_agg.txt
+		for((T=10; T<=100000; T *= 10)) 
+		do
+			./$algo $k 100000 $T >> result_fas_agg.txt
+		done
+	done
+done

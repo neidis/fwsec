@@ -1,0 +1,16 @@
+#
+
+echo "" > result_crypto1999.txt
+
+for algo in crypto1999 
+do
+	echo "$algo" >> result_crypto1999.txt
+	for k in 1024 2048
+	do 
+		echo $k >> result_crypto1999.txt
+		for((T=2; T<=2*1024; T*=2)) 
+		do
+			./$algo $k $T >> result_crypto1999.txt
+		done
+	done
+done

@@ -1,0 +1,14 @@
+#
+
+for algo in crypto2001_slow 
+do
+	echo "$algo" >> result_crypto2001.txt
+	for k in 1024 2048
+	do 
+		echo $k >> result_crypto2001.txt
+		for((T=100; T<=1000; T+=100)) 
+		do
+			./$algo $k $T >> result_crypto2001.txt
+		done
+	done
+done

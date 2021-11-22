@@ -1,0 +1,27 @@
+#
+echo "" > result.txt
+for algo in IR IROpt 
+do
+        echo "$algo" >> result.txt
+        for k in 2048
+        do
+                echo $k >> result.txt
+                for((T=10; T<=100000; T *= 10))
+                do
+                        ./$algo $k $T $T >> result.txt
+                done
+        done
+done
+
+for algo in IR IROpt 
+do
+        echo "$algo" >> result.txt
+        for k in 1024 2048 3072 4096
+        do
+                echo $k >> result.txt
+                for((T=10000; T<=10000; T *= 10))
+                do
+                        ./$algo $k $T $T >> result.txt
+                done
+        done
+done

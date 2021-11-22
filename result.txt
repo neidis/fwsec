@@ -1,0 +1,7 @@
+1024 128000
+Setup Average tiem(10 time) : 0.001743
+Keyissue Average tiem(10 time) : 80.765106
+Sign Average tiem(10 time) : 80.750000
+Verify Average tiem(10 time) : 80.809387
+MSAKupdate Average tiem(10 time) : 0.000025
+

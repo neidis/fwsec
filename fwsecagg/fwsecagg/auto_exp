@@ -1,0 +1,29 @@
+#
+
+#AR_FAS
+echo "" > result_fas.txt
+for algo in BM_FAS 
+do
+	echo "$algo" >> result_fas.txt
+	for k in 2048
+	do 
+		echo $k >> result_fas.txt
+		for((T=10; T<=100000; T *= 10)) 
+		do
+			./$algo $k $T $T>> result_fas.txt
+		done
+	done
+done
+
+#for algo in BM_FAS AR_FAS
+#do
+#	echo "$algo" >> result_fas.txt
+#	for k in 1024 2048 3072 4096
+#	do 
+#		echo $k >> result_fas.txt
+#		for((T=10000; T<=10000; T *= 10)) 
+#		do
+#			./$algo $k $T >> result_fas.txt
+#		done
+#	done
+#done

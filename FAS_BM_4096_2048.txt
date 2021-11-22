@@ -1,0 +1,9 @@
+Setup time: 6.97891
+Sign 1 time: 0.010497
+Verify time: 1.14699
+First update time: 0.002376
+Sign 2 time : 0.01473
+second update time : 0.002327
+Sign 3 time : 0.015479
+Agg : 4e-06
+Aggregate verify time : 3.2e-05

@@ -1,0 +1,12 @@
+k : 2048
+l : 256
+T : 2048
+n : 2048
+Setup time: 19.6665
+Sign 0 time: 0.007363
+Verify time: 1.71806
+First update time: 0.000367
+Sign 1 time : 0.007315
+second update time : 0.000339
+Sign 2 time : 0.00717
+Aggregate verify time : 1.7238
