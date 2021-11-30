@@ -14,14 +14,24 @@ Code for experiment of [BM],[AR],[IR] and its aggregate version [FAS].
 # compile
 
 make BM
+
 make AR
+
 make IR
+
 make BM_FAS
+
 make AR_FAS
 
 # run
 ./BM 2048 T 256
+
 ./AR 2048 T 256
+
 ./IR 2048 T 256
 
-T = 2^x
+./BM_FAS 2048 T 256 n
+
+./AR_FAS 2048 T 256 n
+
+T : total time period, n : the number of signatures
